@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Node.js upload images</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <style>
+        div.preview-images>img {
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 mt-3">
+                <form class="mt-4" action="/register" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <input type="name" name="name" id="input-files" class="form-control-file border" />
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="input-files" class="form-control-file border" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" id="input-files" class="form-control-file border" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="about" id="input-files" class="form-control-file border" />
+                    </div>
+                    <div class="form-group">
+                        <input type="file" name="file" id="input-files" class="form-control-file border" />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="preview-images"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</body>
+
+</html>
